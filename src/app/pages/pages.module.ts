@@ -13,6 +13,9 @@ import { Graficas1Component } from './graficas1/graficas1.component';
 import { ProgressComponent } from './progress/progress.component';
 // Rutas
 import { PAGES_ROUTES } from './pagers.routes';
+
+// Charts
+import { ChartsModule } from 'ng2-charts';
 // temporal
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
 
@@ -28,7 +31,8 @@ import { IncrementadorComponent } from '../components/incrementador/incrementado
   imports: [
       SharedModule,
       PAGES_ROUTES,
-      FormsModule
+      FormsModule,
+      ChartsModule
   ],
   exports: [
     PagesComponent,

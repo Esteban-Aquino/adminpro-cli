@@ -1,12 +1,14 @@
 <h3>{{leyenda}}</h3>
 <div class="input-group">
   <input
+    #txtprogress
     type="number"
     class="form-control"
     name="progreso"
     max="100"
     min="0"
     [(ngModel)]="progreso"
+    (ngModelChange) ="onChanges($event)"
   />
   <div class="input-group-append">
     <button
